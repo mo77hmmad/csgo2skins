@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Skin Market</title><link rel="stylesheet" href="/style.css"></head>
+<body>
+<header><h1>Skin Market</h1>
+  <nav><button data-tab="market" class="on">Market</button><button data-tab="mine">My items</button><button data-tab="wallet">Wallet</button></nav>
+  <div id="auth"></div></header>
+<div id="msg"></div>
+<main>
+  <section id="market"><div class="grid" id="marketGrid"></div></section>
+  <section id="mine" hidden>
+    <h2>Trade URL</h2><div class="row"><input id="tradeUrl" placeholder="https://steamcommunity.com/tradeoffer/new/?partner=...&token=..."><button id="saveUrl">Save</button></div>
+    <h2>My items</h2><div class="grid" id="mineGrid"></div>
+    <h2>Deposit from Steam inventory</h2><button id="loadInv">Load inventory</button><div class="grid" id="invGrid"></div>
+  </section>
+  <section id="wallet" hidden>
+    <h2>Balance: <span id="bal">$0.00</span></h2>
+    <div class="row"><input id="amount" type="number" min="5" max="500" value="10"><button id="topup">Pay by card (Visa / Mastercard)</button></div>
+  </section>
+</main>
+<script src="/app.js"></script></body></html>

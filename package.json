@@ -1,0 +1,23 @@
+{
+  "name": "skin-market",
+  "version": "1.0.0",
+  "private": true,
+  "main": "src/server.js",
+  "scripts": { "start": "node src/server.js" },
+  "dependencies": {
+    "better-sqlite3": "^11.3.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.4.0",
+    "express-session": "^1.18.0",
+    "helmet": "^7.1.0",
+    "passport": "^0.7.0",
+    "passport-steam": "^1.0.18",
+    "session-file-store": "^1.5.0",
+    "steam-totp": "^2.1.2",
+    "steam-tradeoffer-manager": "^2.10.7",
+    "steam-user": "^5.0.6",
+    "steamcommunity": "^3.48.6",
+    "stripe": "^16.8.0"
+  }
+}
